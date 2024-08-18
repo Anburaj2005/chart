@@ -1,0 +1,29 @@
+document.getElementById('openBtn').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.add('open');
+});
+
+document.getElementById('closeBtn').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.remove('clsoe');
+});
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>MySite</h2>
+            <span class="close-btn" id="closeBtn">&times;</span>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <button class="open-btn" id="openBtn">&#9776; Open Sidebar</button>
+        <h1>Welcome to MySite</h1>
+        <p>Your content goes here.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
